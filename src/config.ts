@@ -3,11 +3,25 @@ import { MicroserviceConfig, OAuthCredentials } from './types.js';
 // Configure your Valar microservices here
 export const MICROSERVICES: MicroserviceConfig[] = [
     {
-        name: 'orbits',
+        name: 'service-orbits',
         baseUrl: 'https://api.valar.space',
         oauthUrl: 'https://api.valar.space/v1/token',
         docsPath: '/api-docs/Customer',
         description: 'Valar Orbits API - handles orbital data and calculations'
+    },
+    {
+        name: 'service-async',
+        baseUrl: 'https://staging-async.valar.space',
+        oauthUrl: 'https://api.valar.space/v1/token',
+        docsPath: '/v3/api-docs',
+        description: 'Valar Async Jobs API - handles status of async jobs'
+    },
+    {
+        name: 'service-auth',
+        baseUrl: 'https://auth.valar.space',
+        oauthUrl: 'https://api.valar.space/v1/token',
+        docsPath: '/v3/api-docs',
+        description: 'Valar Auth API - handles user management'
     }
     // Add more microservices as needed
 ];

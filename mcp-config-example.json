@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "valar-api": {
+            "command": "node",
+            "args": [
+                "./dist/index.js"
+            ],
+            "cwd": "/absolute/path/to/valar-mcp",
+            "env": {
+                "VALAR_USERNAME": "your_email@valar.space",
+                "VALAR_PASSWORD": "your_valar_password"
+            }
+        }
+    }
+}
